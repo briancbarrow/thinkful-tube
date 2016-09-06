@@ -1,0 +1,34 @@
+* {
+  font-family: 'Podkova';
+}
+
+.search-cont {
+  margin: 20px auto;
+  text-align: center;
+}
+#query {
+  display: block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result {
+  border: solid 1px gray;
+  margin: 10px auto;
+  max-width: 500px;
+  text-align: center;
+}
+.show-more {
+  font-size: 20px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.search-results {
+  text-align: center;
+}
+
+/*.result p{
+  display: inline-block;
+}*/

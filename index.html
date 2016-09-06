@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html>
-<head>
+  <html>
+  <head>
     <title>Thinkful Tube</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src='./apps/app.js'></script>
-</head>
-<body>
-  <form id="search-term">
-    <input id="query">    
-  </form>
-  <div id="search-results"></div>
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Podkova:700" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-cont">
+        <form id="search-term">
+          <label for="query">Search YouTube</label>
+          <input id="query">    
+        </form>
+      </div>
+      <div id="search-results"></div>
+    </div>
 
-  
-</body>
+
+  </body>
 </html>
