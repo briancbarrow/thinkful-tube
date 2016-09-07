@@ -17,7 +17,7 @@ $(document).ready(function(){
       part: 'snippet',
       q: searchTerm,
       key: 'AIzaSyAOlN6_KVX0PqPLsaA6raMgHhyA8DeX5Hw',
-      maxResults: 2
+      maxResults: 10
     };
     var url = 'https://www.googleapis.com/youtube/v3/search';
     $.getJSON(url, params, function(data) { 
@@ -31,7 +31,7 @@ $(document).ready(function(){
       part: 'snippet',
       q: searchTerm,
       key: 'AIzaSyAOlN6_KVX0PqPLsaA6raMgHhyA8DeX5Hw',
-      maxResults: 2,
+      maxResults: 10,
       pageToken: token
     };
     var url = 'https://www.googleapis.com/youtube/v3/search';
