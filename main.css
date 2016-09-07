@@ -51,7 +51,7 @@
   opacity: 1;
   z-index: 50;
   display: inline-block;
-  position: absolute;
+  position: fixed;
   top: 80px;
   left: 335px;
 }
