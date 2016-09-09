@@ -3,8 +3,7 @@ $(document).ready(function(){
   $('.lightbox').hide();
   $('#overlay').height($(window).height());
   $('#overlay').width($(window).width());
-  $(".lightbox").height(0.6 * $(document).height());
-  $(".lightbox").width($(document).height())
+  $('.lightbox').height(0.6 * $(document).height());
   var searchTerm = '';
   $('#search-term').on('submit', function(event){
     event.preventDefault();    
@@ -71,8 +70,6 @@ $(document).ready(function(){
     })  
   };
 
-
-
   function showMore(data) {
     $.each(data.items, function(index, value){      
       if(value.id.kind === 'youtube#channel'){
@@ -104,7 +101,10 @@ $(document).ready(function(){
     })  
   };
   $('#search-results').on('click', '.result', function(event){
-    var link = $('.result').children('p').children('.hide').attr('href');
+    var link = $(this).children('p').children('.hide').attr('href');
+    var left = $(document).width() * 0.25;
+    $('.lightbox').width(left * 2);
+    $('.lightbox').css('left', left)
     $('#overlay').fadeIn(500);
     $('.lightbox').fadeIn(501);
     $('.lightbox iframe').attr('src', link);
